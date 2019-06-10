@@ -1,9 +1,9 @@
 #declared a list to represent matrix
 matrix= [x for x in range(9)]
 print(matrix)
-print('player 1 will be zero')
-p1=input('Please enter name of player 1')
-p2=input('Please enter name of player 2')
+print('player 1 will be zero\n')
+p1=input('Please enter name of player 1\n')
+p2=input('Please enter name of player 2\n')
 name_and_symbol={
 	'O':p1,
 	'X':p2
@@ -22,28 +22,28 @@ def mark_position(player,pos):
 #method to choose who is the winner 
 def check_if_winner(lst):
 	if lst[0]==lst[1]==lst[2]:
-		print('{} is the winner'.format(name_and_symbol[lst[0]]))
+		print('{} is the winner!'.format(name_and_symbol[lst[0]]))
 		return False
 	if lst[0]==lst[3]==lst[6]:
-		print('{} is the winner'.format(name_and_symbol[lst[0]]))
+		print('{} is the winner!'.format(name_and_symbol[lst[0]]))
 		return False
 	if lst[0]==lst[4]==lst[8]:
-		print('{} is the winner'.format(name_and_symbol[lst[0]]))
+		print('{} is the winner!'.format(name_and_symbol[lst[0]]))
 		return False
 	if lst[6]==lst[7]==lst[8]:
-		print('{} is the winner'.format(name_and_symbol[lst[8]]))
+		print('{} is the winner!'.format(name_and_symbol[lst[8]]))
 		return False
 	if lst[2]==lst[5]==lst[8]:
-		print('{} is the winner'.format(name_and_symbol[lst[8]]))
+		print('{} is the winner!'.format(name_and_symbol[lst[8]]))
 		return False
 	if lst[2]==lst[4]==lst[6]:
-		print('{} is the winner'.format(name_and_symbol[lst[4]]))
+		print('{} is the winner!'.format(name_and_symbol[lst[4]]))
 		return False
 	if lst[3]==lst[4]==lst[5]:
-		print('{} is the winner'.format(name_and_symbol[lst[4]]))
+		print('{} is the winner!'.format(name_and_symbol[lst[4]]))
 		return False
 	if lst[1]==lst[4]==lst[7]:
-		print('{} is the winner'.format(name_and_symbol[lst[4]]))
+		print('{} is the winner!'.format(name_and_symbol[lst[4]]))
 		return False
 	return True
 print('_____________')
